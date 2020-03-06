@@ -1,6 +1,21 @@
 :root {
     --boxShadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
         0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    --colorLight: #fff;
+    --colorDark: #000;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --colorLight: #fff;
+        --colorDark: #000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    }
 }
 
 html,
@@ -212,7 +227,6 @@ body {
     border-left: 11px solid #e6ebf1;
     z-index: 1;
 }
-
 
 .drag-item {
     margin-bottom: 10px;
